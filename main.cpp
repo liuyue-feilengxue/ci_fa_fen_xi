@@ -18,7 +18,7 @@ typedef struct
 WORD* scaner(FILE *fp); // 对文件扫描读取
 int keyOrIdentifier(string token);  // 判断是关键字还是标识符
 #define _KEY_WORD_END "waiting for your expanding"
-string KEY_WORDS[]= {"main","return","if","else","for","include","printf","int","char","#include","stdio.h",_KEY_WORD_END};   /*关键字词组*/
+string KEY_WORDS[]= {"main","return","if","else","for","printf","double","int","char","#include","stdio.h",_KEY_WORD_END};   /*关键字词组*/
 /**
 自动结束（用了EOF来判断是否结束）
 main 41
@@ -26,8 +26,8 @@ return 42
 if 43
 else 44
 for 45
-include 46
-printf 47
+printf 46
+double 47
 int 48
 char 49
 #include 50
